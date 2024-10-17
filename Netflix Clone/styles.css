@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(./Assets/Images/Banner.jpg);
+  background-position: center center;
+  background-size: 100vw;
+  height: 115vh;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width: 377px) {
+  .body {
+    width: 100vw;
+  }
+
+  .main {
+    width: 100vw;
+  }
+
+  nav {
+    max-width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    /* height: 10px; */
+    /* justify-content: space-evenly; */
+  }
+
+  .eng-btn p {
+    display: none;
+  }
+
+  .eng-btn {
+    margin-right: 1px;
+  }
+
+  nav span img {
+    height: 25px;
+    margin-right: 50px;
+  }
+
+  .nav-btns {
+    height: 5%;
+    align-items: center;
+  }
+
+  /* .sign-in-btn {
+    font-size: 6px;
+    font-weight: 500;
+    text-align: center;
+  } */
+
+  .hero-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 50%; */
+  }
+
+  .first {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first div {
+    margin-top: 300px;
+  }
+  .first div :nth-child(1) {
+    margin-top: 200px;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  opacity: 0.65;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  /* color: white; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: auto;
+  padding-top: 15px;
+  height: 65px;
+}
+
+img {
+  /* width: 40px; */
+  height: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  display: flex;
+  height: calc(100% - 80px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* font-weight: 900; */
+  position: relative;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sep {
+  background-color: rgb(35, 35, 35);
+  height: 10px;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  height: 32px;
+  border-radius: 4px;
+  color: white;
+  margin: 0 14px;
+}
+
+.eng-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0.1px solid white;
+  padding: 0 20px;
+  font-size: 15px;
+  color: white;
+  border-radius: 3px;
+}
+
+.eng-btn svg {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.sign-in-btn {
+  /* height: 34px; */
+  border: none;
+  background-color: #c11119;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hero-btns input {
+  height: 50px;
+  width: 350px;
+  padding-left: 20px;
+  padding-top: auto;
+  background-color: transparent;
+  border: 0.2px solid #666669;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+}
+
+.red-hero-btn {
+  height: 50px;
+  border: none;
+  background-color: #c11119;
+  border-radius: 4px;
+  color: white;
+  padding: 0 20px;
+  margin-left: 5px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.red-hero-btn i {
+  margin: 0 10px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80vh;
+  max-width: 70vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  height: 60vh;
+}
+
+.secImg video {
+  position: absolute;
+  /* position: absolute; */
+  left: 58px;
+  top: 68px;
+  height: 210px;
+}
+
+.first div {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+}
+
+.first div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first div :nth-child(2) {
+  font-size: 24px;
+}
+
+#third-img {
+  position: relative;
+}
+
+#third-vid {
+  position: absolute;
+  top: 31px;
+  left: 93px;
+  height: 47%;
+}
+
+/* *************FAQs************* */
+
+.FAQs {
+  color: white;
+}
+
+.FAQs h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75vw;
+  gap: 8px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  background-color: #2e2e2e;
+  padding: 25px 0;
+}
+
+.question p {
+  margin-left: 20px;
+}
+
+.question :nth-child(2) {
+  margin-right: 20px;
+}
+
+#ready {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#faq-sep {
+  margin-top: 65px;
+}
+
+/* ************** Footer ****************/
+
+.footer {
+  height: 60vh;
+}
+
+.links {
+  display: grid;
+  color: #b3b3b3;
+  text-decoration: underline;
+  grid-template-columns: repeat(4, 1fr);
+  width: 76vw;
+  column-gap: 40px;
+  row-gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.call {
+  margin-bottom: 8px;
+  grid-column-start: span 4;
+}
+
+.special {
+  grid-column-start: span 2;
+}
+
+.special-btn {
+  margin-top: 12px;
+  grid-column-start: span 4;
+}
+
+.btn-two {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
